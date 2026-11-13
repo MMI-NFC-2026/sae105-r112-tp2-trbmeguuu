@@ -4,49 +4,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test de menu</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Chats | TP liens relatifs</title>
+  <!-- Lien relatif : depuis ce fichier vers src/css/styles.css -->
+  <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 
 <body>
-  <header class="header header--home">
+  <header class="header">
+    <!-- 1: Ce bouton ouvre ou ferme le menu grâce à l'attribut popovertarget -->
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">🍔</button>
+    <nav class="menu" id="menu" popover aria-label="Menu principal">
+      <button class="menu__close burger burger--close" type="button" popovertarget="menu"
+        popovertargetaction="hide" aria-label="Fermer le menu" autofocus>✕</button>
 
-    <!-- Menu principal -->
-    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">
-    🍔
-    </button>
-
-    <!-- Placer le focus sur le bouton de fermeture -->
-    <nav class="menu" id="menu" popover aria-label="Main menu">
-      <button
-      class="menu__close burger burger--close"
-      type="button"
-      popovertarget="menu"
-      popovertargetaction="hide"
-      aria-label="Close the menu"
-      autofocus
-      >  🍔
-      </button>
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu un</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu deux</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu trois</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu quatre</a></li>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li>
+          <a href="../cats/index.html">Chats</a>
+          <ul>
+            <li><a href="../cats/chat-1.html">chat 1</a></li>
+            <li><a href="../cats/chat-2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../dogs/index.html">Chiens</a>
+          <ul>
+            <li><a href="../dogs/chien-1.html">chien 1</a></li>
+            <li><a href="../dogs/chien-2.html">chien 2</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-    <!-- Fin du menu principal -->
   </header>
 
-  <!-- Contenu principal de la page -->
   <main>
-    <h1>Test de menu</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit maiores accusamus quisquam ad veritatis
-      officiis numquam ex rem porro, amet sapiente eaque. Rerum excepturi eaque atque ipsa quos mollitia.
-    </p>
+    <h1>Chats</h1>
+    <ul>
+      <li><a href="chat-1.html">chat 1 : chat N°1</a></li>
+      <li><a href="chat-2.html">chat 2 : chat N°2</a></li>
+    </ul>
+    <p><a href="../index.html">Retour accueil</a></p>
   </main>
-  <!-- Fin du contenu principal -->
-
 </body>
 
 </html>

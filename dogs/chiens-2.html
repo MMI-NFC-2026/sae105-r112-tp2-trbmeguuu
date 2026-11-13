@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berger allemand qui veut jouer | TP liens relatifs</title>
+  <!-- Lien relatif : depuis ce fichier vers src/css/styles.css -->
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <!-- 1: Ce bouton ouvre ou ferme le menu grâce à l'attribut popovertarget -->
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">🍔</button>
+
+    <!-- 2: Le menu est un popover : il est caché par défaut et s'ouvre avec le bouton. -->
+    <nav class="menu" id="menu" popover aria-label="Menu principal">
+      <!-- 3: Ce bouton ferme le menu. autofocus y place le focus quand le menu s'ouvre. -->
+      <button class="menu__close burger burger--close" type="button" popovertarget="menu"
+        popovertargetaction="hide" aria-label="Fermer le menu" autofocus>✕</button>
+
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li>
+          <a href="../cats/index.html">Chats</a>
+          <ul>
+            <li><a href="../cats/chat-1.html">chat 1</a></li>
+            <li><a href="../cats/chat-2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../dogs/index.html">Chiens</a>
+          <ul>
+            <li><a href="../dogs/chien-1.html">chien 1</a></li>
+            <li><a href="../dogs/chien-2.html">chien 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Berger allemand qui veut jouer</h1>
+    <figure>
+      <img class="media--fullwidth" src="../public/img/dogs/German_shepherd_wanting_to_play.JPG" alt="Berger allemand qui veut jouer">
+      <figcaption>Photo : Wikimedia Commons</figcaption>
+    </figure>
+    <p><a href="index.html">Retour à la liste des chiens</a></p>
+  </main>
+</body>
+
+</html>

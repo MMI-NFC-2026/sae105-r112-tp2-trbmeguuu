@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat qui bâille | TP liens relatifs</title>
+  <!-- Lien relatif : depuis ce fichier vers src/css/styles.css -->
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">🍔</button>
+    <nav class="menu" id="menu" popover aria-label="Menu principal">
+      <button class="menu__close burger burger--close" type="button" popovertarget="menu"
+        popovertargetaction="hide" aria-label="Fermer le menu" autofocus>✕</button>
+
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li>
+          <a href="../cats/index.html">Chats</a>
+          <ul>
+            <li><a href="../cats/chat-1.html">chat 1</a></li>
+            <li><a href="../cats/chat-2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../dogs/index.html">Chiens</a>
+          <ul>
+            <li><a href="../dogs/chien-1.html">chien 1</a></li>
+            <li><a href="../dogs/chien-2.html">chien 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Chat qui bâille</h1>
+    <figure>
+      <img class="media--fullwidth" src="../public/img/cats/Cat_yawning_in_park.jpg" alt="Chat calico qui bâille">
+      <figcaption>Photo : Wikimedia Commons</figcaption>
+    </figure>
+    <p><a href="index.html">Retour vers la liste des chats</a></p>
+  </main>
+</body>
+
+</html>
