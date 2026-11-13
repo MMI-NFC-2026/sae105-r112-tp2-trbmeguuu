@@ -6,11 +6,15 @@
   height: 100%;
   border: 0;
   /* … on complète le bloc existant … */
+  /* def que la transition se fera en 400 ms  */
   transition: 400ms allow-discrete;
+
   opacity: 0;
 }
 
+
 .menu:popover-open {
+    
   opacity: 1;
   
 }
